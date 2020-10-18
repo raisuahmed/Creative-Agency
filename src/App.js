@@ -2,8 +2,14 @@ import React, { createContext, useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 import Home from './Components/Home/Home';
+import AddService from './Components/Dashboard/AddService/AddService';
+import MakeAdmin from './Components/Dashboard/MakeAdmin/MakeAdmin';
+import Dashboard from './Components/Dashboard/Dashboard';
+import AddReview from './Components/Dashboard/AddReview/AddReview';
+import ServiceList from './Components/Dashboard/ServiceList/ServiceList';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
-  export const userContext = createContext();
+export const userContext = createContext();
 
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
@@ -13,7 +19,29 @@ function App() {
         <Switch>
           <Route path="/home">
             <Home />
-          </Route></Switch>
+          </Route>
+          <PrivateRoute path="/dashboard">
+            <Dashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/order">
+            <Dashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/servicelist">
+            <ServiceList />
+          </PrivateRoute>
+          <PrivateRoute path="/review">
+            <AddReview />
+          </PrivateRoute>
+          <PrivateRoute path="/adminServiceList">
+            <Dashboard />
+          </PrivateRoute>
+          <PrivateRoute path="/addService">
+            <AddService />
+          </PrivateRoute>
+          <PrivateRoute path="/makeAdmin">
+            <MakeAdmin />
+          </PrivateRoute>
+          </Switch>
       </Router>
     </userContext.Provider>
   );
