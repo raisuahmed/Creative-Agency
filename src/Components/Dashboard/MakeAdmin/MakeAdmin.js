@@ -4,11 +4,11 @@ import { Col, Form, Row } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import Header from '../../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
-// import './MakeAdmin.css'
+import './MakeAdmin.css'
 
 const MakeAdmin = () => {
     const [admin, setAdmin] = useState({});
-    //  admin email
+    // capture admin email
     const handleBlur = e => {
         const newInfo = { ...admin };
         newInfo[e.target.name] = e.target.value;

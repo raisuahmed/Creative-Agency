@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { userContext } from '../../App';
 import Header from '../Header/Header';
-import AdminServiceList from './AdminServiceList/AddServiceList';
+import AdminServiceList from './AdminServiceList/AdminServiceList';
 import Order from './Order/Order';
 import Sidebar from './Sidebar/Sidebar';
 import { ToastContainer, toast } from 'react-toastify';

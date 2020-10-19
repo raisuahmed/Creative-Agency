@@ -3,7 +3,7 @@ import Table from 'react-bootstrap/Table'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import loading from '../../../images/Loading.gif'
-// Options 
+// Options for project status
 const options = [
     { value: 'Pending', label: 'Pending' },
     { value: 'Ongoing', label: 'Ongoing' },
@@ -12,7 +12,7 @@ const options = [
 
 const AdminServiceList = () => {
     const [allServices, setAllServices] = useState([]);
-    // all Services
+    // Display all Services
     useEffect(() => {
         fetch('https://morning-falls-52247.herokuapp.com/getAllServices')
             .then(res => res.json())

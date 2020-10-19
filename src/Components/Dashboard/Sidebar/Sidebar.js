@@ -4,13 +4,13 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { userContext } from '../../../App';
-
+import './SideBar.css'
 
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const [isAdmin, setIsAdmin] = useState(false);
     const [isUser, setIsUser] = useState(false);
-//Admin
+    // handle admin
     useEffect(() => {
         fetch('https://morning-falls-52247.herokuapp.com/isAdmin', {
             method: 'POST',
@@ -20,7 +20,7 @@ const Sidebar = () => {
             .then(res => res.json())
             .then(data => setIsAdmin(data));
     }, [])
-    // User
+    // handle user
     useEffect(() => {
         fetch('https://morning-falls-52247.herokuapp.com/isUser', {
             method: 'POST',

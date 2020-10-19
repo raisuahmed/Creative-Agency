@@ -6,9 +6,9 @@ import { userContext } from '../../../App';
 const Order = () => {
     // use history to redirect
     const history = useHistory();
-    
+    // dynamic data handler use context
     const [loggedInUser, SetLoggedInUser] = useContext(userContext);
-    // capture data
+    // capture data from form
     const [info, setInfo] = useState({});
     const [file, setFile] = useState(null);
     // users order
@@ -34,13 +34,13 @@ const Order = () => {
             })
         event.preventDefault();
     }
-    // capture data  using onblur
+    // capture data from form using onblur
     const handleBlur = e => {
         const newInfo = { ...info };
         newInfo[e.target.name] = e.target.value;
         setInfo(newInfo);
     }
-    // capture image
+    // capture image from form using onchange
     const handleFileChange = (e) => {
         const newFile = e.target.files[0];
         setFile(newFile);

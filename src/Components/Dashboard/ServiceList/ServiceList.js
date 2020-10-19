@@ -5,12 +5,12 @@ import Sidebar from '../Sidebar/Sidebar';
 import { Button } from 'react-bootstrap';
 import { userContext } from '../../../App';
 import loading from '../../../images/Loading.gif'
-
+import './ServiceList.css'
 
 const ServiceList = () => {
     const [loggedInUser, SetLoggedInUser] = useContext(userContext);
     const [service, setService] = useState([]);
-    // all ServiceList
+    // Display all Servicelist
     useEffect(() => {
         fetch('https://morning-falls-52247.herokuapp.com/getUserServices?email=' + loggedInUser.email, {
             method: 'GET',
