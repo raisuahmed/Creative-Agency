@@ -29,7 +29,7 @@ const Footer = () => {
                         </Form>
                     </Col>
                 </Row>
-                <p className="text-center pt-5"><small>Copyright Pias Rahman 2020</small></p>
+                <p className="text-center pt-5"><small>Copyright Rais U Ahmed 2020</small></p>
             </Container>
         </div>
     );
