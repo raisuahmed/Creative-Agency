@@ -9,8 +9,8 @@ const Footer = () => {
                 <Row>
                     <Col md={6}>
                         <div className="p-5 info-text">
-                            <h3> Let Us Handle Your  <br /> Project, Professionally</h3>
-                            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, voluptatibus, repudiandae <br /> sequi voluptate sunt accusamus totam </p>
+                            <h3 style={{fontSize:"40px"}}> Let Us Handle Your  <br /> Project, Professionally</h3>
+                            <p>With well written, we build amazing apps for all platforms,   <br /> mobile and web apps in general. </p>
 
                         </div>
                     </Col>
@@ -29,7 +29,7 @@ const Footer = () => {
                         </Form>
                     </Col>
                 </Row>
-                <p className="text-center pt-5"><small>Copyright Rais U Ahmed 2020</small></p>
+                <p className="text-center pt-5"><small>Copyright © Rais U Ahmed 2020</small></p>
             </Container>
         </div>
     );

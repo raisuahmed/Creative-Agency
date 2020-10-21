@@ -1,16 +1,17 @@
 .logIn{
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 1px solid rgb(3, 164, 228);
+    border-radius: 15px;
     text-align: center;
-    padding: 100px;
+    padding: 80px;
 }
 .signIn{
-    border: 1px solid black;
-    border-radius: 25px;
+    border: 1px solid rgb(68, 3, 48);
+    border-radius: 15px;
     text-align: center;
     padding: 5px 20px;
     margin-top: 20px;
-    background-color: white;
+    background-color: rgb(3, 170, 221);
+    
 }
 .icon{
     height: 25px;

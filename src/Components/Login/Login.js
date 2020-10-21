@@ -64,8 +64,8 @@ const Login = () => {
             <Container fluid className="d-flex justify-content-center">
                 <div className="logIn">
                     <h2>Log In</h2>
-                    <button onClick={googleSignIn} className="signIn"> <img className="icon mr-5" src={google} alt='' /> Sign In With google </button>
-                    <h6>Don't Have a account?</h6>
+                    <button onClick={googleSignIn} className="signIn"> <img className="icon mr-3" src={google} alt='' /> Continue With google </button>
+                    <h6>Don't Have a account? Create an account.</h6>
                     <p className="warning">{user.googleError}</p>
                 </div>
             </Container>

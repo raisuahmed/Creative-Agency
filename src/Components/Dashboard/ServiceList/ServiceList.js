@@ -5,7 +5,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import { Button } from 'react-bootstrap';
 import { userContext } from '../../../App';
 import loading from '../../../images/Loading.gif'
-import './ServiceList.css'
+import './Servicelist.css'
 
 const ServiceList = () => {
     const [loggedInUser, SetLoggedInUser] = useContext(userContext);

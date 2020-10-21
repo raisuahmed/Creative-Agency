@@ -4,7 +4,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { userContext } from '../../../App';
-import './SideBar.css'
+import './Sidebar.css'
 
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);

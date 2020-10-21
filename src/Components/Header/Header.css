@@ -1,11 +1,13 @@
 .text{
-    color: black;
+    color: #868383;
     text-decoration: none;
-    font-size: medium;
+    font-size: bold;
     font-weight: bold;
-    transition: all 0.5s ease;
-}
-.text :hover{
-    color: gray;
     text-decoration: none;
+    
 }
+.text:hover{
+    text-decoration: none;
+    color: rgb(235, 5, 51);
+}
+

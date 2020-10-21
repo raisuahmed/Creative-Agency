@@ -8,7 +8,10 @@ import img3 from '../../images/logos/netflix.png'
 import img4 from '../../images/logos/slack.png'
 import img5 from '../../images/logos/uber.png'
 import './Home.css'
-
+import Services from './Services/Services';
+import OurWorks from './OurWorks/OurWorks';
+import ClientsFeedback from './ClientsFeedback/ClientsFeedback';
+import Footer from './Footer/Footer';
 
 const Home = () => {
     return (
@@ -49,7 +52,18 @@ const Home = () => {
                     </Col>
                 </Row>
             </Container>
-            
+            <Container>
+                <Services></Services>
+            </Container>
+            <section>
+                <OurWorks></OurWorks>
+            </section>
+            <Container>
+                <ClientsFeedback></ClientsFeedback>
+            </Container>
+            <section>
+                <Footer></Footer>
+            </section>
         </div>
     );
 };

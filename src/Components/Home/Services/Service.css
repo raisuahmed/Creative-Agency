@@ -1,6 +1,6 @@
 .service-info{
     border-radius: 5px;
-    box-shadow: 1px 5px 10px gray;
+    box-shadow: 1px 5px 8px rgb(180, 142, 142);
     transition: transform 0.8s ease;
     cursor: pointer;
     margin-top: 50px;
@@ -9,11 +9,8 @@
     font-weight: bold;
 }
 .text-color{
-    color: rgb(122, 178, 89);
+    color: rgb(102, 212, 108);
 }
 .services-title h2{
     font-weight: bold;
-}
-.service-info:hover{
-    transform: scale(1.05);
 }
